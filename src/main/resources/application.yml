@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: awards
+    version: ${project.version?:unknown}
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /
